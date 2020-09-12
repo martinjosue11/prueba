@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="img/3.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD "Alumnos"</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <button class="nav-boton" onclick="accion()">Menú</button>
+        <a href="pages/insertar.php" class="nav-enlace desaparece">Registrar</a>
+        <a href="pages/buscar.php" class="nav-enlace desaparece">Buscar</a>
+        <a href="pages/actualizar.php" class="nav-enlace desaparece">Actualizar</a>
+        <a href="pages/borrar.php" class="nav-enlace desaparece">Borrar</a>
+    </nav>
+    <br><img src="img/1.jpg" class="imagen1">
+    <img src="img/2.jpg" class="imagen2">
+
+    <br>
+    <section CLASS="titulo">
+    <center><h1>CRUD básico "Alumnos"</h1><h2>Uso de php, css, html y BDD</h2></center>
+    </section>
+
+    <script>
+        function accion(){
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for(var i = 0; i < ancla.length; i++){
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+
+</body>
+</html>
